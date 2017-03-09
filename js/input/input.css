@@ -1,0 +1,87 @@
+.click-to-edit {
+  border-bottom: 2px solid transparent;
+}
+.click-to-edit.display {
+}
+.click-to-edit.empty {
+  opacity: 0.6;
+}
+.click-to-edit:hover {
+  border-bottom-color: white;
+}
+.click-to-edit:hover:before {
+  content: 'Click to edit';
+  position: absolute;
+  font-size: 0.75rem;
+  top: -1.2rem;
+  background-color: rgba(22, 160, 133,1.0);
+  color: white;
+  padding: 0.2rem;
+  transform: rotateZ(-2deg);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+.click-to-edit.multiline {
+  white-space: pre;
+}
+.click-to-edit.multiline.wrap {
+  white-space: initial;
+}
+.click-to-edit-container {
+  position: relative;
+}
+.click-to-edit-container input,
+.click-to-edit-container textarea {
+}
+.click-to-edit-container textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+.click-to-edit-note {
+  position: absolute;
+  top: 1.1rem;
+  left: 0rem;
+  min-width: 15rem;
+  transition: opacity 0.2s;
+  font-size: 1rem;
+  text-align: left;
+  user-select: none;
+  padding: 0.5rem;
+  box-shadow: 0 3px 6px -2px rgba(0,0,0,0.5);
+  border-radius: 3px;
+  sbackground-color: rgba(41, 128, 185,1.0);
+  color: white;
+  white-space: pre-wrap;
+  z-index: 2;
+}
+.click-to-edit-note:hover {
+  opacity: 0.2;
+}
+
+.like-surroundings.mono {
+  font-family: monospace;
+  font-size: 1rem;
+}
+select.like-surroundings,
+textarea.like-surroundings,
+input.like-surroundings {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font-weight: inherit;
+}
+select.like-surroundings {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+select.like-surroundings:focus {
+  outline: 1px solid rgba(41, 128, 185,1.0);
+}

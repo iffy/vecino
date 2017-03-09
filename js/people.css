@@ -1,0 +1,31 @@
+.household-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: grey;
+}
+.household {
+  padding: .5rem;
+  margin: .5rem;
+  background: white;
+  border-radius: 3px;
+}
+.person {
+  display: flex;
+  justify-content: space-between;
+}
+
+table.keyvalue {
+  border-collapse: collapse;
+}
+table.keyvalue td,
+table.keyvalue th {
+  padding: 2px 4px;
+}
+table.keyvalue th {
+  text-align: right;
+}
+table.keyvalue td {
+  text-align: left;
+  border: 1px solid lightgrey;
+}
